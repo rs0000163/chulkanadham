@@ -1,1 +1,198 @@
-coming soon
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>जय श्री श्याम 🙏</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Noto Sans Devanagari", "Mangal", sans-serif;
+      background:
+        radial-gradient(ellipse at center, #fff2ce 0%, #ffd9a0 45%, #a91d12 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    .shyam-page {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 20px;
+      padding: 35px 25px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative golden border */
+    .shyam-page::before {
+      content: "";
+      position: absolute;
+      inset: 14px;
+      border: 3px double #ffd76a;
+      border-radius: 18px;
+      pointer-events: none;
+    }
+
+    .side-text {
+      flex: 1;
+      text-align: center;
+      color: #a30e12;
+      font-size: clamp(30px, 4vw, 65px);
+      font-weight: 900;
+      line-height: 1.8;
+      text-shadow:
+        2px 2px 0 #ffe18a,
+        0 0 18px rgba(255, 255, 255, 0.8);
+      animation: glow 2s ease-in-out infinite alternate;
+      z-index: 1;
+    }
+
+    .side-text span {
+      display: block;
+      color: #b20e13;
+    }
+
+    .center-image {
+      flex: 0 1 480px;
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .center-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 78vh;
+      object-fit: contain;
+      border: 5px solid #ffd66b;
+      border-radius: 22px;
+      box-shadow:
+        0 0 20px #fff0a5,
+        0 0 45px rgba(151, 26, 10, 0.55);
+    }
+
+    .mantra {
+      color: #fff0a5;
+      background: linear-gradient(90deg, #850d10, #c82a13, #850d10);
+      border: 2px solid #ffdb70;
+      border-radius: 30px;
+      padding: 12px 18px;
+      margin-top: 18px;
+      font-size: clamp(18px, 2vw, 26px);
+      font-weight: bold;
+      box-shadow: 0 5px 18px #9e251b55;
+    }
+
+    .diya {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 28px;
+      z-index: 3;
+    }
+
+    @keyframes glow {
+      from {
+        filter: drop-shadow(0 0 2px #ffdc72);
+      }
+      to {
+        filter: drop-shadow(0 0 12px #fff0a0);
+      }
+    }
+
+    /* Mobile responsive design */
+    @media (max-width: 700px) {
+      .shyam-page {
+        flex-direction: column;
+        justify-content: center;
+        gap: 14px;
+        padding: 40px 28px 65px;
+      }
+
+      .side-text {
+        flex: none;
+        font-size: clamp(25px, 7vw, 38px);
+        line-height: 1.4;
+      }
+
+      .side-text span {
+        display: inline;
+      }
+
+      .center-image {
+        flex: none;
+        max-width: min(78vw, 380px);
+      }
+
+      .center-image img {
+        max-height: 58vh;
+      }
+
+      .mantra {
+        font-size: 18px;
+        margin-top: 14px;
+      }
+
+      .diya {
+        bottom: 19px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .side-text {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="shyam-page">
+
+    <!-- Left side text -->
+    <div class="side-text">
+      <span>🙏 जय श्री 🙏</span>
+      <span>श्याम 🌺</span>
+    </div>
+
+    <!-- Center image -->
+    <div class="center-image">
+      <img
+        src="https://res.cloudinary.com/ddf8equjt/image/upload/v1791948223/1706190668_1706190665073.jpg_grmsje.webp"
+        alt="श्री खाटू श्याम जी"
+      >
+
+      <div class="mantra">
+        🌺 हारे का सहारा, बाबा श्याम हमारा 🌺
+      </div>
+    </div>
+
+    <!-- Right side text -->
+    <div class="side-text">
+      <span>🙏 जय श्री 🙏</span>
+      <span>श्याम 🌺</span>
+    </div>
+
+    <div class="diya">🪔 🙏 🪔</div>
+
+  </main>
+
+</body>
+</html>
